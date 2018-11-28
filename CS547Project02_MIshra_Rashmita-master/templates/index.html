@@ -1,0 +1,23 @@
+{% include 'layout.html' %}
+{% block title %}
+ Login Page
+{% endblock %}
+{% block content %}
+ {% if errorMessage is defined %}
+ <strong>{{ errorMessage }}</strong>
+ {% endif %}
+ {# Creating a form for login #}
+ <section id="section-about" class="bg-grey">
+ </br>
+ <form action= "/login" method="post">
+ <label>Username</label>
+ <input type="text" name="username">
+ <label>Password</label>
+ <input type="password" name="password">
+ <input type="submit">
+ </form>
+</br></br></br>
+ </section>
+ {% endblock %}
+
+ {% include 'footer.html' %}

@@ -1,0 +1,8 @@
+flask
+redis
+mysql
+flask_sqlalchemy
+flask-login
+uwsgi
+
+

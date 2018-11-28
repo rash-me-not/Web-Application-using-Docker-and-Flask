@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block title %}
+ Login Page
+{% endblock %}
+{% block content %}
+ {% if errorMessage is defined %}
+ <strong>{{ errorMessage }}</strong>
+ {% endif %}
+ {# Creating a form for login #}
+ <section id="section-about" class="bg-grey">
+ </br>
+<form action="/registerAction" method="post">
+        <div class="alert alert-error"><?= $_SESSION['message'] ?></div>
+        Username: <input type="text" placeholder="Username" name="username" required size=30><br><br>
+        First Name: <input type="text" placeholder="First Name" name="first_name" required size=30><br><br>
+        Last Name: <input type="text" placeholder="Last Name" name="last_name" required size=30><br><br>
+        Fav Game: <input type="text" placeholder="Fav Game" name="fav_game" required size=30><br><br>
+        Phone: <input type="tel" id="phone" placeholder="123-456-7890"  name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        Phone Type: <select name="phone_type"><option value="" disabled selected>Select</option><option value="Android">Android</option><option value="IOS">IOS</option></select><br><br>
+        DOB:  <input type="date" id="dob" name="dob" placeholder="birth date" ><br><br>
+        Password: <input type="password" placeholder="Password" name="password" required size=30><br><br>
+        <input type="submit" name="submit" required size=30>
+</form>
+ </section>
+{% endblock %}

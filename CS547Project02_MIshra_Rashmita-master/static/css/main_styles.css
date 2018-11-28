@@ -1,0 +1,45 @@
+@charset "utf-8";
+.jumbotron {
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 0px;
+}
+
+.bg-cover {
+  background-size: cover;
+  color: rgb(233, 233, 196);
+  background-position: center;
+  position: relative;
+}
+
+section{
+  background: #fff;
+  -webkit-background-size: 100% !important;
+  -moz-background-size: 100% !important;
+  -o-background-size: 100% !important;
+  background-size: 100% !important;
+}
+
+.bg-grey {
+  background-color: #f7e48d;
+}
+
+.heading {
+  color: #000; 
+  font-family: Impact,  sans-serif;
+  font-size: 54px; 
+  font-weight: 250; 
+  line-height: 58px; 
+  text-align: center;
+}
+
+.panel-footer.panel-custom {
+  background:#000;
+  color: #fff;
+  text-align-last: center;
+  position: absolute;
+  width: 100%;
+
+}
